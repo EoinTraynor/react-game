@@ -2,8 +2,8 @@
 This React application is a game that requires the user to calculate the number of stars that are displayed.
 
 ## Requirements
-[NodeJS](https://nodejs.org/)
-[Yarn](https://yarnpkg.com/)
+* [NodeJS](https://nodejs.org/)
+* [Yarn](https://yarnpkg.com/)
 
 ## Technologies Used
 * [NodeJS](https://nodejs.org/)
@@ -15,3 +15,19 @@ If the answer is correct you can proceed by clicking the check mark.
 In the event that your answer is incorrect or you are unable to calculate the number of stars with the remaining available numbers, 
 you will be required to redraw the amount of stars that are displayed.  
 A total of 5 redraws can be used.
+
+## Instructions
+clone and enter the repo
+```bash
+git clone https://github.com/EoinTraynor/react-game.git && cd react-game
+```
+
+Install dependencies
+```bash
+yarn install
+```
+
+Run the application
+```bash
+yarn start
+```
