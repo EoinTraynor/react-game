@@ -114,6 +114,21 @@ const DoneFrame = (props) => {
   );
 };
 
+const Instructions = () => {
+  return (
+    <div>
+      <h4>How to Play</h4>
+      <p>
+        Using the numbers above, calculate the sum of stars that are displayed. Use the '=' to test your answer. 
+        If the answer is correct you can proceed by clicking the check mark. 
+        In the event that your answer is incorrect or you are unable to calculate the number of stars with the remaining available numbers, 
+        you will be required to redraw the amount of stars that are displayed.  
+        A total of 5 redraws can be used.
+      </p>      
+    </div>
+  );
+}
+
 class Game extends React.Component {
   static randomNumber = () => 1 + Math.floor(Math.random()*9);
   static initialState = () => ({
@@ -191,8 +206,9 @@ class Game extends React.Component {
     } = this.state;
 
     return (
-      <div className="container">
-        <h3>Play Nine</h3>
+      <div className="container">        
+        <br />
+        <h3>Calculate the Number of Stars</h3>
         <hr />
         <div className="row">
           <Stars numberOfStars={randomNumberOfStars} />
@@ -212,6 +228,8 @@ class Game extends React.Component {
                    selectNumber={this.selectNumber}
                    usedNumbers={usedNumbers} />
         }
+        <br />
+        <Instructions />
       </div>
     );
   }
