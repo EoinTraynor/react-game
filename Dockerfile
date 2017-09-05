@@ -1,6 +1,4 @@
-FROM node:6
-
-RUN curl -o- -L https://yarnpkg.com/install.sh | bash
+FROM node
 
 RUN git clone https://github.com/EoinTraynor/react-game.git
 
